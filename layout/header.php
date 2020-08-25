@@ -13,8 +13,20 @@
 
 <div class="col-12  ">
     <div class='text-right '>
+        <?php
+        if(!$user->is_logged_in()) {
+        ?>
         <button type="button" class="btn"><a href="login.php">Login</a></button>
         <button type="button" class="btn"><a href="registration.php">Register</a></button>
+        <?php
+        }else{
+            ?>
+            <button type="button" class="btn"><a href="logout.php">Log out</a></button>
+            <button type="button" class="btn"><a href="changePassword.php">Change Password</a></button>
+            <?php
+        }
+
+        ?>
     </div>
 
 </div>
