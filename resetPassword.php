@@ -24,7 +24,7 @@ require_once('layout/header.php');
 
 	    	} else { ?>
 
-				<form role="form" method="post" action="" autocomplete="off">
+				<form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" autocomplete="off">
 					<h2>Change Password</h2>
 					<hr>
 

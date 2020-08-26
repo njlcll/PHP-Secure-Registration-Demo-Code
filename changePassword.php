@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
 <div class="row">
 
     <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-        <form role="form" method="post" action="" autocomplete="off">
+        <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" autocomplete="off">
             <div class="form-group">
                 <h2>Change Password </h2>
                 <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="1">

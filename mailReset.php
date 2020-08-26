@@ -21,7 +21,7 @@ require_once('layout/header.php');
 	<div class="row">
 
 	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-			<form role="form" method="post" action="" autocomplete="off">
+			<form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"  autocomplete="off">
 				<h2>Reset Password</h2>
 				<p><a href='login.php'>Back to login page</a></p>
 				<hr>
